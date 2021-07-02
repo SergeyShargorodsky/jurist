@@ -1,27 +1,37 @@
 <template lang="pug">
-  v-row.text-center
-    v-col(cols='3')
-      v-img.my-3(:src="require('../assets/img/foto-3.jpg')" contain='' height='350')
-    v-col(cols='3')
-      v-img.my-3(:src="require('../assets/img/foto-4.jpg')" contain='' height='350')
-    v-col(cols='6')
-      h4 Устная консультация	от 50,00 рублей
-      h4 Письменная консультация	от 80,00 рублей
-      h4 Составление претензии (ответа на претензию)	от 100,00 рублей
-      h4 Составление искового заявления (письменных возражений против иска)	от 120,00 рублей
-      h4 Подготовка документации по процедуре закупки	от 200,00 рублей
-      h4 Участие в переговорах, представление интересов в государственных органах	от 100,00 рублей
-      h4 Сопровождение создания и регистрации коммерческой организации (ЧУП, ООО, ОДО, ОАО)	от 150,00 рублей
-      h4 Сопровождение процедуры внесения изменений в учредительные документы коммерческой организации (ЧУП, ООО, ОДО, ОАО)	от 100,00 рублей
-      h4 Сопровождение процедуры реорганизации коммерческой организаций	от 300,00 рублей
-      h4 Подготовка договоров (соглашений)	от 80,00 рублей
-      h4 Подготовка дополнительных соглашений к договорам (соглашениям), протоколов разногласий	от 50,00 рублей
+    v-row
+        v-col(cols='6')
+            v-row.bg-doc
+                v-col(cols='6')
+                    v-img.my-3(:src="require('../assets/img/foto-3.jpg')" contain='')
+                v-col(cols='6')
+                    v-img.my-3(:src="require('../assets/img/foto-4.jpg')" contain='')
+        v-col(cols='6')
+            .price-container
+                v-simple-table(dense)
+                    template(v-slot:default='')
+                        //thead
+                            tr
+                                th.text-left
+                                    | Name
+                                th.text-left
+                                    | Price
+                        tbody
+                            tr(v-for='item in dataPrice' :key='item.text')
+                                td {{ item.text }}
+                                td.text-nowrap от {{ item.price }}р
+
 </template>
 
 <script>
-export default {
-name: "Price"
-}
+    import { dataPrice } from '../data/data-price'
+
+    export default {
+        name: 'Price',
+        data: () => ({
+            dataPrice: dataPrice,
+        }),
+    }
 </script>
 
 <style scoped>

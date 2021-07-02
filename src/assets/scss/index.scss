@@ -1,0 +1,33 @@
+html {
+    font-size: 20px;
+    background-color: #424242;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+}
+
+.bg-doc {
+
+    background-color: cadetblue;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}

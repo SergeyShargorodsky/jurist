@@ -1,29 +1,15 @@
-<template>
-  <div id="map">
-    <yandex-map
-        :coords="coords"
-        zoom=10
-    >
-      <ymap-marker
-          :coords="coords"
-          :icon="markerIcon"
-          marker-id="123123"
-      />
-    </yandex-map>
-
-
-  </div>
-
+<template lang='pug'>
+  div
+    span Проверка MAP!
+    //yandex-map-component(:coords='item.coords.split(", ")')
 </template>
 
 <script>
-import { yandexMap, ymapMarker } from 'vue-yandex-maps'
-
-
+import YandexMapComponent from './YandexMapComponent'
 export default {
   name: 'Map',
-  components: {yandexMap, ymapMarker},
-  data() {
+    components: { YandexMapComponent },
+    data() {
     return {
       coords: [
         54.82896654088406,
@@ -45,12 +31,12 @@ export default {
 </script>
 
 <style lang="scss">
-#map {
-  width: 100%;
-  height: 100vh;
-}
+/*#map {*/
+  // width: 100%;
+  /*height: 100vh;*/
+/*}*/
 
-.ymap-container {
-  height: 100%;
-}
+/*.ymap-container {*/
+/*<!--  height: 100%;-->*/
+/*}*/
 </style>
