@@ -1,5 +1,5 @@
 <template lang="pug">
-    v-row.text-center
+    v-row.text-center#contacts
         v-col(cols='6')
             .text-container
                 h1 +375 29 309 85 83

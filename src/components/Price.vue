@@ -1,5 +1,5 @@
 <template lang="pug">
-    v-row
+    v-row#price
         v-col(cols='6')
             v-row.bg-doc
                 v-col(cols='6')

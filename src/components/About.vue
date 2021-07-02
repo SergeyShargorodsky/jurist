@@ -1,5 +1,5 @@
 <template lang="pug">
-    v-row.text-center
+    v-row.text-center#home
         v-col(cols='6')
             v-img(:src="require('../assets/img/foto-1.jpg')" contain='')
         v-col(cols='6')

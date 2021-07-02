@@ -1,5 +1,5 @@
 <template lang="pug">
-    v-row.text-center
+    v-row.text-center#about
         v-col(cols='6')
                 .text-container
                     h1 ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ
