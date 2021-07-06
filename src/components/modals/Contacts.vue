@@ -12,8 +12,8 @@
 
 <script>
     //import Map from '@/components/Map'
-    import YandexMapComponent from './YandexMapComponent'
-    import IYandexMap         from './i-yandex-map'
+    import YandexMapComponent from '../YandexMapComponent'
+    import IYandexMap         from '../i-yandex-map'
 
     export default {
         name: 'Contacts',

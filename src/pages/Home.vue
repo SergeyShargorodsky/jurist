@@ -5,15 +5,13 @@
             requisites
             price
             contacts
-
 </template>
 
 <script>
-    import HelloWorld from '@/components/HelloWorld'
-    import About      from '@/components/About'
-    import Requisites from '@/components/Requisites'
-    import Price      from '@/components/Price'
-    import Contacts   from '@/components/Contacts'
+    import About      from '@/components/modals/About'
+    import Requisites from '@/components/modals/Requisites'
+    import Price      from '@/components/modals/Price'
+    import Contacts   from '@/components/modals/Contacts'
 
     export default {
         name: 'Home',
@@ -22,7 +20,6 @@
             Price,
             Requisites,
             About,
-            HelloWorld,
         },
     }
 </script>

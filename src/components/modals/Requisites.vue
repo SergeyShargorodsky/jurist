@@ -17,7 +17,7 @@
 
         v-col(cols='6')
             v-row
-                v-img(:src="require('../assets/img/foto-2.jpg')" contain='')
+                v-img(:src="require('../../assets/img/foto-2.jpg')" contain='')
 </template>
 
 <script>
